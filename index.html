@@ -12,15 +12,27 @@
         <div class="container">
             <div id="scene">
                 <h2 id="text">
-                <span>S</span>
-                <span>U</span>
-                <span>M</span>
-                <span>M</span>
-                <span>E</span>
-                <span>R</span>
+                <span data-depth-y="2">S</span>
+                <span data-depth-y="-6">U</span>
+                <span data-depth-y="5">M</span>
+                <span data-depth-y="-8">M</span>
+                <span data-depth-y="-3">E</span>
+                <span data-depth-y="2">R</span>
                 </h2>
+                <div class="layer"><img src="./images/img1.png"></div>
+                <div class="layer"><img src="./images/img2.png"></div>
+                <div class="layer"><img src="./images/img3.png"></div>
+                <div class="layer"><img src="./images/img4.png"></div>
+                <div class="layer"><img src="./images/img5.png"></div>
+                <div class="layer"><img src="./images/img6.png"></div>
+                <div class="layer"><img src="./images/img7.png"></div>
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        let text = document.getElementById('text');
+        let parallaxInstance = new Parallax(text);
+    </script>
 </body>
 </html>
