@@ -19,13 +19,13 @@
                 <span data-depth-y="-3">E</span>
                 <span data-depth-y="2">R</span>
                 </h2>
-                <div class="layer"><img src="./images/img1.png"></div>
-                <div class="layer"><img src="./images/img2.png"></div>
-                <div class="layer"><img src="./images/img3.png"></div>
-                <div class="layer"><img src="./images/img4.png"></div>
-                <div class="layer"><img src="./images/img5.png"></div>
-                <div class="layer"><img src="./images/img6.png"></div>
-                <div class="layer"><img src="./images/img7.png"></div>
+                <div class="layer zIndexAbove"data-depth="-0.5"><img src="./images/img1.png"></div>
+                <div class="layer zIndexAbove"data-depth="0.75"><img src="./images/img2.png"></div>
+                <div class="layer zIndexAbove"data-depth="1"><img src="./images/img3.png"></div>
+                <div class="layer"data-depth="-0.25"><img src="./images/img4.png"></div>
+                <div class="layer"data-depth="0.625"><img src="./images/img5.png"></div>
+                <div class="layer"data-depth="-0.375"><img src="./images/img6.png"></div>
+                <div class="layer zIndexAbove"data-depth="0.5"><img src="./images/img7.png"></div>
             </div>
         </div>
     </section>
@@ -33,6 +33,8 @@
     <script>
         let text = document.getElementById('text');
         let parallaxInstance = new Parallax(text);
+        let scene = document.getElementById('scene');
+        let parallaxInstance2 = new Parallax(scene);
     </script>
 </body>
 </html>
